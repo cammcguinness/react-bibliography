@@ -6,21 +6,21 @@ import bibtexParse from 'bibtex-parse-js'
 var BibPhdThesis = CreateReactClass({
   render: function(){
     var tags = this.props.entry.entryTags;
-    return <div style={{height: 50}}><span>{tags.author}</span>. <span style={{fontWeight: 'bold'}}>{tags.title}</span>. Ph.D Thesis ({tags.year})</div>
+    return <div><span>{tags.author}</span>. <span style={{fontWeight: 'bold'}}>{tags.title}</span>. Ph.D Thesis ({tags.year})</div>
   }
 })
 
 var BibArticle = CreateReactClass({
     render: function(){
       var tags = this.props.entry.entryTags;
-      return <div style={{height: 50}}><span>{tags.author}</span>. <span style={{fontWeight: 'bold'}}>{tags.title}</span> in <span style={{fontStyle: 'italic'}}>{tags.journal} {tags.volume}({tags.volume}):{tags.pages}</span>, <span>{tags.year}</span></div>
+      return <div><span>{tags.author}</span>. <span style={{fontWeight: 'bold'}}>{tags.title}</span> in <span style={{fontStyle: 'italic'}}>{tags.journal} {tags.volume}({tags.volume}):{tags.pages}</span>, <span>{tags.year}</span></div>
     }
 })
 
 var BibInProceedings = CreateReactClass({
     render: function(){
       var tags = this.props.entry.entryTags;
-      return <div style={{height: 50}}><span>{tags.author}</span>. <span style={{fontWeight: 'bold'}}>{tags.title}</span> in <span style={{fontStyle: 'italic'}}>{tags.booktitle}</span>. Pages <span>{tags.pages}</span>. <span>{tags.address}</span> <span>{tags.year}</span></div>
+      return <div><span>{tags.author}</span>. <span style={{fontWeight: 'bold'}}>{tags.title}</span> in <span style={{fontStyle: 'italic'}}>{tags.booktitle}</span>. Pages <span>{tags.pages}</span>. <span>{tags.address}</span> <span>{tags.year}</span></div>
     }
 })
 
