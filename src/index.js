@@ -1,6 +1,5 @@
 import React from 'react'
 import CreateReactClass from 'create-react-class'
-import Infinite from 'react-infinite'
 import bibtexParse from 'bibtex-parse-js'
 
 
@@ -76,7 +75,7 @@ export default CreateReactClass({
 
               }
               else if(et=="unpublished"){
-                
+
               }
         }
         return elements;
